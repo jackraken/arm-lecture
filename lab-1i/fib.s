@@ -14,9 +14,9 @@ fibonacci:
 	push {r3, r4, r5, r6, r7, lr}
 
 	sub r4, r0, #0	@ store r0(parameter) in r4
-	mov r5, #0      @ r5 is previous fib num 
-	mov r6, #1	@ r6 is current fib num
-	mov r7, #1	@ r7 is current index
+	mov r5, #1      @ r5 is previous fib num 
+	mov r6, #0	@ r6 is current fib num
+	mov r7, #0	@ r7 is current index
 
 .L5:			@ this is a loop
 	cmp r4, r7	@ if current index equals to the index we want  
